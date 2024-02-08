@@ -1,24 +1,20 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     var clickableArea = document.getElementById("clickableArea");
     var clickableImage = document.getElementById("clickableImage");
 
     clickableArea.addEventListener("mousedown", function() {
-        // Toggle between two images
-        if (clickableImage.src.endsWith("chan.png")) {
-            clickableImage.src = "chanlaugh.png"; // Replace with the path to your new image
+        if (clickableImage.src = "chan.png") {
+            clickableImage.src = "chanlaugh.png";
         } else {
-            clickableImage.src = "chan.png"; // Replace with the path to your original image
+            clickableImage.src = "chan.png"; 
         }
     });
 
     clickableArea.addEventListener("mouseup", function() {
-        // Toggle between two images
-        if (clickableImage.src.endsWith("chanlaugh.png")) {
-            clickableImage.src = "chan.png"; // Replace with the path to your new image
+        if (clickableImage.src = "chanlaugh.png") {
+            clickableImage.src = "chan.png"; 
         } else {
-            clickableImage.src = "chanlaugh.png"; // Replace with the path to your original image
+            clickableImage.src = "chanlaugh.png"; 
         }
     });
 });
-
