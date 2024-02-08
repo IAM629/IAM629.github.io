@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.clickable {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.clickable img {
+    width: 50vw; /* Set your desired width relative to the viewport width */
+    height: auto;
+}
+
