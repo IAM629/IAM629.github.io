@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    const clickableArea = document.getElementById("clickableArea");
-    const clickableImage = document.getElementById("clickableImage");
+    var clickableArea = document.getElementById("clickableArea");
+    var clickableImage = document.getElementById("clickableImage");
 
     clickableArea.addEventListener("mousedown", function() {
         // Toggle between two images
