@@ -16,7 +16,7 @@ body {
 }
 
 .clickable img {
-    width: 50vw; /* Set your desired width relative to the viewport width */
+    width: 50vw;
     height: auto;
 }
 
