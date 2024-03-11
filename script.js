@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         clickableImage.src = "chanlaugh.png";
     }
 
-    // Update visitor count on page load
-    await updateVisitorCount();
+    // Update visitor count on page
     await updateServerClickCount();
+    await updateVisitorCount();
     setInterval(updateHiddenVisitorCount, 30000);
 });
