@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     async function updateHiddenVisitorCount(){
         if(hiddenClickCount!=0){
             try {
-                await fetch('https://6sgej564zybhk2den2zqtdhxmi0zssli.lambda-url.eu-north-1.on.aws/', {
+                await fetch('https://w9ok6net4b.execute-api.eu-north-1.amazonaws.com', {
                     method: 'POST',
                     mode: 'no-cors',
                     headers: {
