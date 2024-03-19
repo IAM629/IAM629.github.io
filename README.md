@@ -1,2 +1,3 @@
-Click the image!
-The counter in server side will update every 30s
+Click the image! 
+
+Your click count will upload to server every 30s
