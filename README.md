@@ -2,4 +2,4 @@ Click the image!
 
 Your click count will upload to server every 30s
 
-Refencing [popcat.click](https://popcat.click/)https://popcat.click/
+Just a little game referencing [popcat.click](https://popcat.click/)
