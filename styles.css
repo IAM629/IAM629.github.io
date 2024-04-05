@@ -55,6 +55,16 @@ body {
 
 }
 
+#comment{
+    font-size: 14px;
+    position: -webkit-fixed; /*for Safari */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;  /*Add some padding for better aesthetics */
+
+}
 
 @media only screen and(max-width: 768px) {
     html, body {
