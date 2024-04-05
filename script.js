@@ -101,5 +101,5 @@ document.addEventListener("DOMContentLoaded", async function () {
     await daysPassed();
     await updateServerClickCount();
     await updateVisitorCount();
-    setInterval(updateHiddenVisitorCount, 30000);
+    setInterval(updateHiddenClickCount, 30000);
 });
