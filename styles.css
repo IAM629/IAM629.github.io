@@ -48,7 +48,7 @@ body {
     font-size: 20px;
     position: -webkit-fixed; /*for Safari */
     position: fixed;
-    bottom: 0;
+    bottom: 3%;
     width: 100%;
     text-align: center;
     padding: 10px;  /*Add some padding for better aesthetics */
