@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     }
 
-    async function updateHiddenClickCount(){
+    async function updateHiddenVisitorCount(){
         if(hiddenClickCount!=0){
             try {
                 await fetch('https://6sgej564zybhk2den2zqtdhxmi0zssli.lambda-url.eu-north-1.on.aws/', {
@@ -101,5 +101,5 @@ document.addEventListener("DOMContentLoaded", async function () {
     await daysPassed();
     await updateServerClickCount();
     await updateVisitorCount();
-    setInterval(updateHiddenClickCount, 30000);
+    setInterval(updateHiddenVisitorCount, 30000);
 });
