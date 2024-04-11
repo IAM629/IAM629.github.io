@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             } catch (error) {
                 console.error('Error sending hiddenClickCount:', error);
             }
+            updateServerClickCount();
         }
         
     }
@@ -102,4 +103,5 @@ document.addEventListener("DOMContentLoaded", async function () {
     await updateServerClickCount();
     await updateVisitorCount();
     setInterval(updateHiddenVisitorCount, 30000);
+
 });
