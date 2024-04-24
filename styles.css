@@ -2,39 +2,69 @@ html, body {
     font-family: 'Arial', sans-serif;
 }
 
-body {
-    flex-direction: column;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 19px;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #f0f0f0;
+    
 }
 
-#clickableArea { 
+li a:hover {
+    background-color: #969696;
+}
+
+.current {
+    background-color: #7b7b7b;
+}
+
+#visitor_counter_container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+#clickable_area { 
     display: flex;
     justify-content: center;
 }
 
-#clickableImage{
+#clickable_image{
     max-width: 100%;
     height: auto;
 }
 
-#chanlog{
+#chan_log{
     text-align: center;
     font-size: 24px;
 }
 
-#daysPassed{
+#days_passed{
     color: red;
     font-size: 40px;
-}
-
-#visitor_counter_container{
-    /*padding-top: 10px;*/
-    padding-left: 10px;
-    font-size: 12px;
 }
 
 #click_counter_container{
     text-align: center;
     font-size: 16px;
+}
+
+#click_counter{
+    text-align: center;
+    font-size: 32px;
 }
 
 #server_click_counter_container {
@@ -44,8 +74,10 @@ body {
     bottom: 3%;
     width: 100%;
     text-align: center;
-    padding: 10px;  /*Add some padding for better aesthetics */
-
+    text-shadow: -1px -1px 0 #efe4d1,
+              1px -1px 0 #efe4d1,
+              -1px 1px 0 #efe4d1,
+              1px 1px 0 #efe4d1;
 }
 
 #comment{
@@ -55,31 +87,12 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px;  /*Add some padding for better aesthetics */
-
+    text-shadow: -1px -1px 0 #efe4d1,
+              1px -1px 0 #efe4d1,
+              -1px 1px 0 #efe4d1,
+              1px 1px 0 #efe4d1;
 }
 
-@media only screen and(max-width: 768px) {
-    html, body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        height: auto;
-    }
-    
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #server_click_counter {
-        font-size: 16px;
-        position: -webkit-fixed;
-        position: fixed;
-        left: 0;
-        bottom: 1%;
-        width: 100%;
-        text-align: center;
-        padding: 10px;  
-    }
-
+#project_title{
+    font-size: 26px;
 }

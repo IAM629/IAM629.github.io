@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", async function () {
     var clickCounterContainer = document.getElementById("click_counter");  //queryselector by class
-    var clickableArea = document.getElementById("clickableArea");
-    var clickableImage = document.getElementById("clickableImage");
+    var clickableArea = document.getElementById("clickable_area");
+    var clickableImage = document.getElementById("clickable_image");
     var targetDate = new Date("2018-02-17T00:00:00Z").getTime();
     var punchaudio = new Audio("punch.mp3");
 
     // Retrieve the previous values
-    var clickCount = localStorage.getItem("localclickcount") || 0;
-    var hiddenClickCount = localStorage.getItem("hiddenLocalClickCount") || 0;
+    var clickCount = localStorage.getItem("local_click_count") || 0;
+    var hiddenClickCount = localStorage.getItem("hidden_local_click_count") || 0;
 
     clickCounterContainer.innerHTML = clickCount;
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         var daysPassedText = yearsPassed + "年" + monthsPassed + "月" + remainingDays + "日";
 
-        document.getElementById("daysPassed").innerText = daysPassedText;
+        document.getElementById("days_passed").innerText = daysPassedText;
     }
 
     async function updateServerClickCount() {
@@ -77,25 +77,25 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     function handleMouseDown() {
-        clickableImage.src = "chan.png";
+        clickableImage.src = "image/chan.png";
         clickCount++;
         hiddenClickCount++;
-        localStorage.setItem("localclickcount", clickCount);
-        localStorage.setItem("hiddenLocalClickCount", hiddenClickCount);
+        localStorage.setItem("local_click_count", clickCount);
+        localStorage.setItem("hidden_local_click_count", hiddenClickCount);
         clickCounterContainer.innerHTML = clickCount;
         playSoundEffect();
     }
 
     function handleMouseUp() {
-        clickableImage.src = "chanlaugh.png";
+        clickableImage.src = "image/chanlaugh.png";
     }
 
     function handleTouchStart() {
-        clickableImage.src = "chan.png";
+        clickableImage.src = "image/chan.png";
     }
 
     function handleTouchEnd() {
-        clickableImage.src = "chanlaugh.png";
+        clickableImage.src = "image/chanlaugh.png";
     }
 
     // Update visitor count on page load

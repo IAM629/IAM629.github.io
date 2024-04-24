@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        html,
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        hr {
+            width: 25%;
+            background-color: #333;
+            color: #333;
+            height: 1px;
+        }
+
+        ul#project_nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-size: 19px;
+            position: fixed;
+            bottom: 0;
+        }
+
+        ul#top_nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 8px;
+            overflow: hidden;
+            font-size: 19px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-size: 19px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+            background-color: #f0f0f0;
+
+        }
+
+        li a:hover {
+            background-color: #969696;
+        }
+
+        li a.current {
+            background-color: #7b7b7b;
+        }
+
+        .project_container {
+            display: none;
+            text-align: center;
+        }
+
+        .project_container.active {
+            display: block;
+            background-color: #ffffff;
+        }
+
+        .project_container.active.fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .project_container.inactive.fade-out {
+            animation: fadeOut 1s ease-in-out;
+        }
+
+        #project_title {
+            font-size: 36px;
+            font-weight: bold;
+
+        }
+
+        img#to_left {
+            position: relative;
+            right: 320px;
+        }
+
+        img#to_right {
+            position: relative;
+            left: 320px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: 641px) {
+            img {
+                width: 641px;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            img#to_left {
+                position: static;
+            }
+
+            img#to_right {
+                position: static;
+            }
+            p#to_left,p#to_right{
+                font-weight: bold;
+            }
+        }
+
+        @media (min-width: 1281px) {
+            img#to_left {
+                position: relative;
+                right: 320px;
+            }
+
+            img#to_right {
+                position: relative;
+                left: 320px;
+            }
+            p#to_left{
+                position: relative; 
+                right: 320px;
+                top: 225px;
+                font-weight: bold;
+                
+            }
+            p#to_right{
+                position: relative; 
+                left: 320px;
+                top: 225px;
+                font-weight: bold;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="top_nav">
+        <li><a href="index.html">Click Chan</a></li>
+        <li><a class="current" href="project.html">My Project</a></li>
+    </ul>
+    <br><br><br>
+
+    <div id="auto_car" class="project_container active">
+        <p id="project_title">Autonomous car</p>
+        <hr style="width:25% ;background-color: #333;  color: #333; height: 1px;">
+        <p>Integration of <a href="https://microbit.org/">micro:bit</a> modules<br><br>
+            Implemented manual and auto modes for seamless control<br><br>
+            Capability to navigate various tracks in auto mode.
+        </p>
+        <img src="project/car/Car.jpg" alt="photo of the actual car">
+
+        <br><br><br>
+        <p style="font-size: 24px;">Demo video for navigating different track</p>
+        <a href="https://youtu.be/Sj3nIsgq84c" target="_blank"> <img src="project/car/square.png"></a>
+        <a href="https://youtu.be/yzieJI9rHCQ" target="_blank"> <img src="project/car/circle.png"></a>
+        <br>
+        <p style="font-size: 24px;">Demo video for manual mode</p>
+        <a href="https://youtu.be/4p3KdGOq5eU" target="_blank"><img src="project/car/manual.png"></a>
+        <br><br><br><br><br>
+    </div>
+
+    <div id="pos" class="project_container inactive">
+        <p id="project_title">Point of Sales system</p>
+        <hr>
+        <p>The smart retail project utilized the <a href="https://www.arduino.cc/">Arduino</a> platform with diverse
+            components<br><br>
+            Performed the seamless integration of cloud services to enable self-service checkout and analysis
+        </p>
+        <img src="project/pos/structure.png" alt="Hardware and Software Architecture">
+
+        <br><br><br><br>
+        <p style="font-size: 24px;">Architecture of the ardruino board</p>
+        <img src="project/pos/board.jpg" alt="board structure">
+        <br><br><br>
+        <p style="font-size: 24px;">Screenshot for the react.js interface</p>
+        <img src="project/pos/user profile.jpg" alt="user profile">
+        <img src="project/pos/history.jpg" alt="user shopping history">
+        <img src="project/pos/analysis.jpg" alt="user shopping history">
+
+        <br><br><br><br><br>
+    </div>
+
+    <div id="light_field" class="project_container inactive">
+        <p id="project_title">Photonic light-field image processing</p>
+        <hr>
+        <p>A project focused on the comprehensive exploration and application of <a
+                href="https://en.wikipedia.org/wiki/Light_field_camera">light field</a> image properties
+            <br><br>
+            Developed and implemented features of depth map estimation, post-capture refocusing, perspective changing,
+            and full depth-of-field construction.
+        </p>
+
+        <img src="project/fyp/format.jpg" alt="eslf format">
+
+        <br><br><br><br>
+        <p id="to_left">
+            Estimate relative distances by analyzing captured light rays
+            <br><br>
+            Enhancing the perception of depth in your photos.
+        </p>
+        <img id="to_right" src="project/fyp/depth map.png" alt="eslf format">
+
+
+        <p id="to_right">
+            Achieve sharp focus by adjusting the focus point of your image even after taken
+            <br><br>
+            Creating pleasing background blur
+        </p>
+        <img id="to_left" src="project/fyp/refocus.gif" alt="refocus">
+        
+
+        <p id="to_left">
+            Merge image at different focus to construct photos with extended depth of field 
+            <br><br>
+            Ensuring exceptional sharpness across various angles
+        </p>
+        <img id="to_right" src="project/fyp/fulldof.jpg" alt="fulldof">
+        
+
+        <p id="to_right">
+            Dynamically adjust the perspective of your photos after capturing them
+            <br><br>
+            Exploring different viewpoints and angles
+        </p>
+        <img id="to_left" src="project/fyp/persepective.gif" alt="change of persepective">
+
+        <br><br><br><br><br>
+    </div>
+
+
+    <ul id="project_nav">
+        <li><a href="#" onclick="showProject('auto_car')">Autonomous Car</a></li>
+        <li><a href="#" onclick="showProject('pos')">Point of Sales System</a></li>
+        <li><a href="#" onclick="showProject('light_field')">Photonic Light-field Image Processing</a></li>
+    </ul>
+
+
+
+
+    <script>
+        function showProject(projectId) {
+            // Hide all project containers
+            var projectContainers = document.querySelectorAll('.project_container');
+            projectContainers.forEach(function (container) {
+                container.classList.remove('active');
+                container.classList.add('inactive', 'fade-out');
+            });
+
+            // Show the selected project container
+            var selectedProject = document.getElementById(projectId);
+            selectedProject.classList.remove('inactive', 'fade-out');
+            selectedProject.classList.add('active', 'fade-in');
+        }
+    </script>
+</body>
+
+</html>
