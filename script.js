@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     function handleMouseDown() {
-        clickableImage.src = "image/chan.png";
+        clickableImage.src = "image/chan.webp";
         clickCount++;
         hiddenClickCount++;
         localStorage.setItem("local_click_count", clickCount);
@@ -87,15 +87,15 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     function handleMouseUp() {
-        clickableImage.src = "image/chanlaugh.png";
+        clickableImage.src = "image/chanlaugh.webp";
     }
 
     function handleTouchStart() {
-        clickableImage.src = "image/chan.png";
+        clickableImage.src = "image/chan.webp";
     }
 
     function handleTouchEnd() {
-        clickableImage.src = "image/chanlaugh.png";
+        clickableImage.src = "image/chanlaugh.webp";
     }
 
     // Update visitor count on page load
